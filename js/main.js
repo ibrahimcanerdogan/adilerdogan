@@ -102,7 +102,6 @@ function goToSlide(n) {
     });
 }
 
-<script>
 function openModal(img) {
   var modal = document.getElementById("imageModal");
   var modalImg = document.getElementById("modalImage");
@@ -114,7 +113,6 @@ function closeModal() {
   var modal = document.getElementById("imageModal");
   modal.style.display = "none";
 }
-</script>
 
 // Event listeners
 prevButton.addEventListener('click', () => {
