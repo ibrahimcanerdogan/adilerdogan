@@ -102,6 +102,14 @@ function goToSlide(n) {
     });
 }
 
+<script>
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'albumLabel': "Görsel %1 / %2"
+  })
+</script>
+
 // Event listeners
 prevButton.addEventListener('click', () => {
     stopSlider();
