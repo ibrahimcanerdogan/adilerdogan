@@ -40,6 +40,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+function openModal(imgElement) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    var captionText = document.getElementById("caption");
+
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+    captionText.innerHTML = imgElement.alt;
+  }
+
+  function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+  }
+
 // Sayfa yüklendiğinde header'ı şeffaf yap
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
@@ -100,18 +115,6 @@ function goToSlide(n) {
     dots.forEach((dot, index) => {
         dot.classList.toggle('active', index === currentSlide);
     });
-}
-
-function openModal(img) {
-  var modal = document.getElementById("imageModal");
-  var modalImg = document.getElementById("modalImage");
-  modal.style.display = "block";
-  modalImg.src = img.src;
-}
-
-function closeModal() {
-  var modal = document.getElementById("imageModal");
-  modal.style.display = "none";
 }
 
 // Event listeners
