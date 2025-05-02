@@ -10,10 +10,6 @@
     <meta property="og:description" content="Manisa/Akhisar'da kaliteli erkek kuaförü hizmetleri.">
     <meta property="og:image" content="images/logo.png">
     <meta property="og:url" content="https://gozdeerkekkuaforu.com">
-    <!-- Lightbox CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
-    <!-- Lightbox JS -->
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
 
     <title>Gözde Erkek Kuaförü - Manisa/Akhisar</title>
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -168,20 +164,29 @@
           
             <div class="gallery-wrapper">
                 <div class="masonry-gallery">
-                  <img src="images/gallery/kuafor1.jpeg" alt="Akhisar erkek kuaförü saç kesimi örneği" class="gallery-item tall">
-                  <img src="images/gallery/kuafor2.jpeg" alt="Akhisar berber salonu iç tasarımı" class="gallery-item wide">
-                  <img src="images/gallery/kuafor3.jpeg" alt="Erkek saç modeli - Gözde Kuaför Akhisar" class="gallery-item square">
-                  <img src="images/gallery/kuafor4.jpeg" alt="Akhisar sakal tıraşı hizmeti" class="gallery-item wide">
-                  <img src="images/gallery/kuafor5.jpeg" alt="Hijyenik berber ortamı - Akhisar Gözde Kuaför" class="gallery-item tall">
-                  <img src="images/gallery/kuafor6.jpeg" alt="Akhisar modern erkek kuaförü koltukları" class="gallery-item square">
-                  <img src="images/gallery/kuafor7.jpeg" alt="Berberde cilt bakımı uygulaması - Akhisar" class="gallery-item wide">
-                  <img src="images/gallery/kuafor8.jpeg" alt="Gözde Kuaför'de müşteri memnuniyeti - Akhisar berber" class="gallery-item tall">
-                  <img src="images/gallery/kuafor9.jpeg" alt="Manisa Akhisar kuaför salonu detayları" class="gallery-item square">
-                  <img src="images/gallery/kuafor10.jpeg" alt="Adil & Baki Erdoğan ile profesyonel tıraş" class="gallery-item wide">
+                  <img src="images/gallery/kuafor1.jpeg" class="gallery-item tall" onclick="openModal(this)">
+                  <img src="images/gallery/kuafor2.jpeg" class="gallery-item wide" onclick="openModal(this)">
+                  <img src="images/gallery/kuafor3.jpeg" class="gallery-item square" onclick="openModal(this)">
+                  <img src="images/gallery/kuafor4.jpeg" class="gallery-item wide" onclick="openModal(this)">
+                  <img src="images/gallery/kuafor5.jpeg" class="gallery-item tall" onclick="openModal(this)">
+                  <img src="images/gallery/kuafor6.jpeg" class="gallery-item square" onclick="openModal(this)">
+                  <img src="images/gallery/kuafor7.jpeg" class="gallery-item wide" onclick="openModal(this)">
+                  <img src="images/gallery/kuafor8.jpeg" class="gallery-item tall" onclick="openModal(this)">
+                  <img src="images/gallery/kuafor9.jpeg" class="gallery-item square" onclick="openModal(this)">
+                  <img src="images/gallery/kuafor10.jpeg" class="gallery-item wide" onclick="openModal(this)">
                 </div>
               </div>
               
           </section>
+          
+
+<!-- Modal (gizli halde başlatılır) -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+
 
         <!-- Google Maps Konum -->
         <section class="map-section">
@@ -200,6 +205,7 @@
         </section>
 
 </section>
+
 
     </main>
 
